@@ -212,7 +212,7 @@
 
 .save-button {
   padding: 15px 20px;
-  margin: 0 auto;
+  margin: 0 auto 105px;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -222,6 +222,7 @@
 @media (width <= 375px) {
   .save-button {
     flex-direction: column;
+    margin: 0 auto 100px;
   }
 }
 
@@ -376,11 +377,12 @@
 }
 
 .card__text-container {
-  padding: 27px 25px;
+  padding: 25px 27px;
   font-size: 18px;
+  line-height: 21px;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 27px;
 }
 
 .card__icon-button {

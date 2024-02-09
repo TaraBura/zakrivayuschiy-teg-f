@@ -21,7 +21,7 @@
 
   <body class="page">
     <header class="header">
-      <a href="#" class="header__link">&lt;/html&gt;</a>
+      <a class="header__link">&lt;/html&gt;</a>
       <h1 class="header__title">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -594,11 +594,11 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form>
+        <form method="dialog">
           <button
             class="button ok-button"
-            onclick="window['dialog-id'].close()"
             type="submit"
+            onclick="window['dialog-id'].showModal();"
             aria-controls="dialog-id"
           >
             <span class="button__text">Ok</span>
